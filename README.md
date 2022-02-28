@@ -1,37 +1,30 @@
 # word-game-app
 
-## Project Members:
-  * Abdinasir Yussuf
-  * Thomas Basham
-  * James Brooks
-  * Marcus Hartwig
+## Project Members
 
-## Project Description 
+* Abdinasir Yussuf
+* Thomas Basham
+* James Brooks
+* Marcus Hartwig
 
-**MadLibs**
+## Project Description
 
-webpage that takes user inputs from a series of prompts that generates a creative 
-story from that input. 
+---
 
-*problem it solves:*
+### MadLibs
 
-- this will solve the users boredom by engaging their brain in a nice story driven rpg
-- the user will get inspiration from exercising their creativity.
+webpage that takes user inputs from a series of prompts that generates a creative
+story from that input.
 
-*define minimum viable product:*
+#### problem it solves:
 
-a form with user submission that persists data to the story that renders to another page. 
+* this will solve the users boredom by engaging their brain in a nice story driven rpg
+* the user will get inspiration from exercising their creativity.
 
+#### define minimum viable product:
 
-**Guessing Game(trivia)**
+a form with user submission that persists data to the story that renders to another page.
+- [User Stories](https://github.com/orgs/team-Beverly-Hills/projects/1)
 
-A game that prompts the user with trivia questions from series of topics and generates points; keeps track of user scores.
-
-*what problem does it solve:*
-
-- this will solve the users boredom by engaging their brain in a nice trivia game
-- the user will come out of this experience more knowledgeable. 
-
-*define minimum viable product:*
-
-A site that contains all the topics and questions and answers; generates a score based on correct or wrong answers. 
+<img src="img/concept-map.jpg" width="1000px" height="450px">;
+<img src="img/domain-map.jpg" width="1000px" height="450px">;
