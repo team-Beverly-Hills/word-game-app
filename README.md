@@ -26,4 +26,5 @@ story from that input.
 a form with user submission that persists data to the story that renders to another page.
 - [User Stories](https://github.com/orgs/team-Beverly-Hills/projects/1)
 
-<img src="img/concept-map.jpg" width="700px" height="500px">;
+<img src="img/concept-map.jpg" width="1000px" height="450px">;
+<img src="img/domain-map.jpg" width="1000px" height="450px">;
