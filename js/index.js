@@ -4,7 +4,7 @@
 let userName = '';
 
 // Dom Windows
-let nameForm = document.getElementById('');
+let nameForm = document.getElementById('nameFormID');
 
 // Functions
 function handleSubmit(event) {
