@@ -1,11 +1,14 @@
 
 a:link { text-decoration: none; }
+a:visited {
+  text-decoration: none;
+}
 header {
-  background-color: rgb(67, 126, 204);
+  background-color: #00B2CA;
   /* grid-column: 1/-1; */
   text-align: center;
   /* justify-content: space-between; */
-  height: 8em;
+  height: 10em;
   width: 100%;
   display: flex;
   align-items: center;
@@ -14,8 +17,10 @@ header {
   
 }
 #title {
+  font-family: 'Indie Flower';
   font-size: 40px;
   letter-spacing: 1.5px;
+
 }
 header ul{
 
@@ -31,21 +36,30 @@ header nav{
   justify-content: space-between;
 }
 header li {
-  
+  width: ;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
 }
 
-header li :first-child{
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(138,43,226,1) 100%);
-border-radius: 5em;
-padding: .2em;
+a{
+  background: #F79256;
+  /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(138,43,226,1) 100%); */
+border-radius: 10px;
+padding: .3em;
+padding-inline: 2em;
 
 }
 
-header li :hover{
+
+
+header li:first-child:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+header li:last-child:hover{
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5); 
@@ -59,7 +73,7 @@ body {
 #main-content {
   font-family: 'indie flower', cursive;
   background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(138,43,226,1) 100%);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, #9C4BE7 100%);
   width: 70%;
   height: 600px;
   text-align: center;
