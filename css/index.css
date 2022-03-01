@@ -1,0 +1,50 @@
+
+
+header {
+  background-color: grey;
+  /* grid-column: 1/-1; */
+  text-align: center;
+  /* justify-content: space-between; */
+  height: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+header li {
+  margin: 16px;
+  display: inline-block;
+}
+header li :first-child{
+  background-color: blueviolet;
+border: 5px solid blueviolet;
+border-radius: 5em;
+padding: 2em;
+}
+main {
+  font-family: 'indie flower', cursive;
+  background-color: blueviolet;
+  width: 70%;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+}
+
+main h1{
+  font-size: 60px;
+  letter-spacing: 3px;
+  position: relative;
+  padding: 40px;
+}
+
+main h1 form{
+  position: relative;
+  margin:auto;
+  top: auto;
+  bottom: auto;
+}
+
