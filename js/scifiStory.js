@@ -17,6 +17,6 @@ function renderUserName(){
 
 renderUserName();
 
-// function renderStory() {
-
+// function renderStory(event) {
+  
 // }
