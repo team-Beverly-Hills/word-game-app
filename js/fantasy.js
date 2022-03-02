@@ -1,35 +1,30 @@
-<!DOCTYPE html>
-<html>
+// Dom Windows
+let userName = document.getElementById('userName');
+// let story = document.getElementById('MadLibs Story');
 
-<head>
-  <title>Fantasy Story</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/fantasyStory.css">
-</head>
+// localStorage Retrieval
+let savedUserName = localStorage.getItem('userName');
+// let storyProperties = localStorage.getItem('#### PLACEHOLDER ####');
+let parsedName = JSON.parse(savedUserName);
+// let parsedStory = JSON.parse(storyProperties);
 
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="pages/storedStories.html">Stored Stories</a></li>
-        <li><a href="pages/storyGen.html"> Change Stories</a></li>
-      </ul>
-    </nav>
+// Functions;
+function renderUserName(){
+  userName.textContent = `Welcome to the Site, ${parsedName}`;
+}
+
+renderUserName();
+
+// function renderStory(event) {
   
-  </header>
+// }
 
-  <main>
-    <div id="userProfile">
-    <img src="" alt="basic-user-image">
-    <p id="userName"></p> 
-     <p id="MadLibs Story"></p>
-    </div>
-    <h1>Fantasy Story</h1>
-    <div id="fantasyMadLib">
-      <h3> (PLACE-ONE) Dreams </h3>
-      <h4>stuff of nightmares</h4>
-      <p>
+
+
+
+
+
+{/* <p>
         The path was (ADJECTIVE-ONE) but well marked. Streams of moonlight filtered through the leaves of the trees of
         the (PLACE-ONE), illuminating parts of the trail while others remained pitch black. A (PERSON-THREE)'s hut was
         fabled to lie in this (PLACE-ONE), but (NAME-ONE) (VERB-ONE) at these superstitions. They had promised to
@@ -52,20 +47,4 @@
         walkingstick, surrounded by strange (NOUN-NINE).
         “Don’t you still want to (VERB-TWO) with me, (PERSON-ONE)?” (PERSON-TWO) cackled as she looked deep into their
         eyes. (PERSON-ONE) (VERB-FOUR) softly as (PERSON-TWO) led the helpless fool to her (FURNITURE) and their doom.
-      </p>
-      <p>
-        Paul Mansfield
-        is a writer, photographer, guitar player, philosopher — some he does well, others not so well. He still tries
-        them all. You can follow him on Twitter @pmansfield.
-        https://medium.com/microcosm/dark-forest-dreams-a748a99ea8a3
-      </p>
-    </div>
-
-  </main>
-  <footer>
-
-  </footer>
-    <script src="../js/fantasyStory.js"></script>
-</body>
-
-</html>
+      </p> */}
