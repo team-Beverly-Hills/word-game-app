@@ -6,15 +6,15 @@ let story3 = document.getElementById('story3');
 let story4 = document.getElementById('story4');
 
 // make sure you retrieve stories from local storage
-let savedStory1 = localStorage.getitem(``) 
-let savedStory2 = localStorage.getitem(``) 
-let savedStory3 = localStorage.getitem(``) 
-let savedStory4 = localStorage.getitem(``) 
+let savedStory1 = localStorage.getItem('renderedSciFiStory');
+// let savedStory2 = localStorage.getItem(`renderedAdventureStory`) 
+// let savedStory3 = localStorage.getItem(`renderedActionStory`) 
+// let savedStory4 = localStorage.getItem(`renderedFantasyStory`) 
 
-let parsedStory1 = JSON.parse(savedStory1)
-let parsedStory2 = JSON.parse(savedStory2)
-let parsedStory3 = JSON.parse(savedStory3)
-let parsedStory4 = JSON.parse(savedStory4)
+let parsedStory1 = JSON.parse(savedStory1);
+// let parsedStory2 = JSON.parse(savedStory2)
+// let parsedStory3 = JSON.parse(savedStory3)
+// let parsedStory4 = JSON.parse(savedStory4)
 
 
 // create a div and write the text content in it
@@ -22,7 +22,7 @@ let parsedStory4 = JSON.parse(savedStory4)
 function storyDiv(event){
   
   let story1content = document.createElement('p');
-  story1content.textContent = parsedStory1
+  story1content.textContent = parsedStory1;
   story1.appendChild(story1content);
   
   let story2content = document.createElement('p');
