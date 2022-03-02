@@ -1,0 +1,17 @@
+body {
+  background-color: cornsilk;
+}
+
+#userProfile {
+  border: solid gray;
+  position: ;
+}
+
+select {
+  border: green solid;
+  background-color: hotpink;
+}
+
+#storyGen div {
+  border: dashed blue;
+}
