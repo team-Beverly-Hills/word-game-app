@@ -30,7 +30,7 @@ function renderStory() {
 The ${parsedStory[3].word13} one then began ${parsedStory[3].word14} stashing all of the money into bags with a ${parsedStory[3].word15} grin on his face. Going from teller to teller, the ${parsedStory[3].word2}s gathered their loot, leaving a trail of ${parsedStory[3].word16}s behind. 
 	“Thank you for your patience, we are leaving now!”
 The 3 ${parsedStory[3].word2}s dashed out of the bank leaving nothing behind except the bag of ${parsedStory[3].word6}. Darting through the ${parsedStory[3].word17} streets of ${parsedStory[3].word13}, they are sure that it was a job well done.
-	{parsedStory[3].word18}!!! The {parsedStory[3].word2}s were crushed by a ${parsedStory[3].word19}. Oh no!! Not the ${parsedStory[3].word20}s!!! Who would of thought after all of this time the ${parsedStory[3].word20}s would be able to foil the {parsedStory[3].word2}’s plans. All it took to track them down was for the ${parsedStory[3].word20}s to find the bag of ${parsedStory[3].word6} in order to track the {parsedStory[3].word2}s. 
+	${parsedStory[3].word18}!!! The ${parsedStory[3].word2}s were crushed by a ${parsedStory[3].word19}. Oh no!! Not the ${parsedStory[3].word20}s!!! Who would of thought after all of this time the ${parsedStory[3].word20}s would be able to foil the ${parsedStory[3].word2}’s plans. All it took to track them down was for the ${parsedStory[3].word20}s to find the bag of ${parsedStory[3].word6} in order to track the ${parsedStory[3].word2}s. 
 	The moral of this story, is don’t be a ${parsedStory[3].word21} ${parsedStory[3].word2} or you will be stopped by a ${parsedStory[3].word20}. Have a ${parsedStory[3].word22} day!`;
   story.textContent = actionStory;
   let stringAction = JSON.stringify(actionStory);
