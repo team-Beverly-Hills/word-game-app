@@ -36,6 +36,7 @@ header nav{
   justify-content: space-between;
 }
 header li {
+  width: auto;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -68,8 +69,7 @@ body {
   flex-direction: column;
   justify-content:space-between;
 }
-
-#main-content {
+main {
   font-family: 'indie flower', cursive;
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, #9C4BE7 100%);
