@@ -1,24 +1,22 @@
-`use strict`;
+'use strict';
 
-// window 
-let userName = document.getElementById('username');
+// Dom Windows
+let userName = document.getElementById('userName');
+// let story = document.getElementById('MadLibs Story');
 
-
-// retrieving from local storage
-let savedUserName = localStorage.getItem('username');
+// localStorage Retrieval
+let savedUserName = localStorage.getItem('userName');
+// let storyProperties = localStorage.getItem('#### PLACEHOLDER ####');
 let parsedName = JSON.parse(savedUserName);
+// let parsedStory = JSON.parse(storyProperties);
 
+// Functions;
+function renderUserName(){
+  userName.textContent = `Welcome to the Site, ${parsedName}`;
+}
 
+renderUserName();
 
-// now start functions
-
-
-
-// render function for the user name near logo
-
-
-
-
-
-
-// render function for story
+// function renderStory(event) {
+  
+// }
