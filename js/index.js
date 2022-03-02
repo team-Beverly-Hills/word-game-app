@@ -7,9 +7,10 @@ let userName = '';
 let nameForm = document.getElementById('nameFormID');
 
 // Functions
-function handleSubmit(event) {
+function handleSubmit(event){
   event.preventDefault();
   userName = event.target.userName.value;
+  nameForm.reset();
   let localStoredName = JSON.stringify(userName);
   localStorage.setItem('userName', localStoredName);
 }
