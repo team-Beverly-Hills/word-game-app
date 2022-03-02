@@ -107,7 +107,7 @@ let actionWords = new MadLibsWords('', '', '', '', '', '', '', '', '', '', '', '
 
 // eslint-disable-next-line no-unused-vars
 function madLibsLabelGen() {
-  if (currentGenre === 'Sci-Fi') {
+  if (currentGenre === 'SciFi') {
     genre1.textContent = (`${sciFiWords.madLib1}`);
     genre2.textContent = (`${sciFiWords.madLib2}`);
     genre3.textContent = (`${sciFiWords.madLib3}`);
@@ -247,6 +247,7 @@ function handleGenreSubmit(event) {
   event.preventDefault();
   currentGenre = event.target.genreSelector.value;
   console.log(currentGenre);
+  madLibsLabelGen();
 }
 
 // Function Calls
