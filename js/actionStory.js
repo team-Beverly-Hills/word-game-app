@@ -1,3 +1,4 @@
+
 'use strict';
 
 // Dom Windows
@@ -20,9 +21,9 @@ function renderUserName(){
 renderUserName();
 
 function renderStory() {
-  let adventureStory = ``;
-  story.textContent = adventureStory;
-  let stringAdventure = JSON.stringify(adventureStory);
-  localStorage.setItem('renderedAdventureStory', stringAdventure);
+  let actionStory = ``;
+  story.textContent = actionStory;
+  let stringAction = JSON.stringify(actionStory);
+  localStorage.setItem('renderedActionStory', stringAction);
 }
 renderStory();
