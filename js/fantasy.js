@@ -6,7 +6,7 @@ let story = document.getElementById('MadLibs Story');
 
 // localStorage Retrieval
 let savedUserName = localStorage.getItem('userName');
-let storyProperties = localStorage.getItem('fantasyStory');
+let storyProperties = localStorage.getItem('storyWords');
 let parsedStory = JSON.parse(storyProperties);
 let parsedName = JSON.parse(savedUserName);
 
@@ -20,10 +20,8 @@ function renderUserName(){
 renderUserName();
 
 function renderStory() {
-
-  `${parsedStory[1].word1} Dreams 
-      stuff of nightmares`
-  `The path was ${parsedStory[1].word2} but well marked. Streams of moonlight filtered through the leaves of the trees of the ${parsedStory[1].word1}, 
+let fantasyStory= `${parsedStory[1].word1} Dreams stuff of nightmares
+  The path was ${parsedStory[1].word2} but well marked. Streams of moonlight filtered through the leaves of the trees of the ${parsedStory[1].word1}, 
   illuminating parts of the trail while others remained pitch black. A ${parsedStory[1].word3}'s hut was fabled to lie in this ${parsedStory[1].word1}, 
   but ${parsedStory[1].word4} ${parsedStory[1].word5} at these superstitions. They had promised to ${parsedStory[1].word6} with ${parsedStory[1].word7} 
   that night, but only in the middle of the ${parsedStory[1].word1}, at the stroke of midnight. As all the other girls in the village were 
@@ -40,7 +38,20 @@ function renderStory() {
   from their dreams of youth and beauty into an old ${parsedStory[1].word3} with a long walkingstick, surrounded by strange ${parsedStory[1].word21}.
   “Don’t you still want to ${parsedStory[1].word6} with me, ${parsedStory[1].word10}?” ${parsedStory[1].word7} cackled as it looked deep into their 
   eyes. ${parsedStory[1].word10} ${parsedStory[1].word22} softly as ${parsedStory[1].word7} led the helpless fool to it's ${parsedStory[1].word16} 
-  and their doom.`
+  and their doom.`;
+
+
+
+  // <!-- <p>
+  //       Paul Mansfield
+  //       is a writer, photographer, guitar player, philosopher — some he does well, others not so well. He still tries
+  //       them all. You can follow him on Twitter @pmansfield.
+  //       https://medium.com/microcosm/dark-forest-dreams-a748a99ea8a3
+  //     </p> -->
+
+  story.textContent = fantasyStory;
+  let stringFantasy = JSON.stringify(fantasyStory);
+  localStorage.setItem('renderedFantasyStory', stringFantasy);
 
 }
 
