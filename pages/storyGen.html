@@ -13,14 +13,21 @@
     <img src="" alt="basic-user-image">
     <p id="userName"></p>
   </div>
+  <form id="storySelector">
+    <fieldset>
+      <label for="genreSelector">Choose Your Genre</label>
+      <select id="genreSelector" required>
+        <option></option>
+        <option>Fantasy</option>
+        <option>Adventure</option>
+        <option>Sci-Fi</option>
+        <option>Action</option>
+      </select>
+    </fieldset>
+    <button type="submit">Submit Story Selection</button>
+  </form>
   <form id="storyGen">
     <fieldset>
-      <select>
-        <option id="ddFantasy">Fantasy</option>
-        <option id="ddAdventure">Adventure</option>
-        <option id="ddScifi">Sci-Fi</option>
-        <option id="ddAction">Action</option>
-      </select>
     <div>
       <label for="word1"></label>
       <input type="text" name="word1" id="word1" required> 
