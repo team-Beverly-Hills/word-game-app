@@ -79,7 +79,7 @@ function MadLibsWords(madLib1, madLib2, madLib3, madLib4, madLib5, madLib6, madL
 }
 let sciFiWords = new MadLibsWords('Generic Place', 'Verb', 'Verb', 'Adjective', 'Thing', 'Adjective', 'Adverb', 'Person Noun(Plural)', 'Verb', 'Capitalized Place', 'Capitalized Place', 'Person Noun(Plural)', 'Adjective that ends in ing', 'Noun', 'Verb', 'Noun', 'Noun', 'Location in House', 'Part of the Body', 'Adjective', 'Food', 'Adjective');
 let fantasyWords = new MadLibsWords('', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
-let adventureWords = new MadLibsWords('', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
+let adventureWords = new MadLibsWords('Name', 'Location', 'Adjective-er', 'Adjective', 'Noun', 'Noun', 'Animal', 'Object', 'Verb-Past Tense', 'Verb', 'Animal Body Part', 'Adjective', 'Family-Member', 'Adjective', 'Verb', 'Verb-Base Form', 'Verb-Past Tense', 'Animal Body Part', 'Part of Body', 'Part of Body', 'Verb', 'Animal Sound');
 let actionWords = new MadLibsWords('', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
 
 
