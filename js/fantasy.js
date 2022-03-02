@@ -20,31 +20,28 @@ function renderUserName(){
 renderUserName();
 
 function renderStory() {
-  let fantasyStory = `The path was ${ADJECTIVE-ONE} but well marked. Streams of moonlight filtered through the leaves of the trees of
-  the ${PLACE-ONE}, illuminating parts of the trail while others remained pitch black. A ${PERSON-THREE}'s hut was
-  fabled to lie in this ${PLACE-ONE}, but ${NAME-ONE} ${VERB-ONE} at these superstitions. They had promised to
-  ${VERB-TWO} with ${PERSON-TWO} that night, but only in the middle of the ${PLACE-ONE}, at the stroke of midnight.
-  As all the other girls in the village were ${NOUN-ONE}, ${PERSON-TWO} had readily agreed.
-  As the midnight hour approached, the trail grew ${ADJECTIVE-FOUR} and harder to traverse. {PERSON-ONE}
-  lit her ${NOUN-TWO}. They continued onwards, with ${PERSON-TWO} ready at any moment, to claim the ${NOUN-THREE}
-  ${PERSON-ONE} had promised. The night grew ${ADJECTIVE-TWO}, and the ${PLACE-ONE} became ${ADJECTIVE-THREE} as they
-  travelled the path they must.
-  Eventually, the path opened up, and they found themselves in a ${NOUN-FOUR}. A ${NOUN-FIVE} in the middle of the
-  ${PLACE-ONE}. The moon shone bright, and there was no mistaking the thatched hut directly in the middle of the
-  ${NOUN-FIVE}.
-  “It’s the ${PERSON-THREE}’s house,” handsome ${PERSON-TWO} said as he examined the hut. “We must (VERB-THREE),
-  lest we meet our downfall here.”
-  “But you wanted to ${VERB-TWO} with me. Wouldn’t it be better on my ${FURNITURE}, in my house?” ${PERSON-TWO}
-  replied.
-  ${PERSON-ONE} turned and stared at ${PERSON-TWO}. As we all know, ${NOUN-SIX} can tell no lies, and in the bright
-  moonlight falling within the ${PLACE-ONE}, ${PERSON-TWO} was no longer the most beautiful ${NOUN-SEVEN} in the
-  village. She had transformed from his dreams of youth and beauty into an old ${NOUN-EIGHT} with a long
-  walkingstick, surrounded by strange ${NOUN-NINE}.
-  “Don’t you still want to ${VERB-TWO} with me, ${PERSON-ONE}?” ${PERSON-TWO} cackled as she looked deep into their
-  eyes. ${PERSON-ONE} ${VERB-FOUR} softly as ${PERSON-TWO} led the helpless fool to her ${FURNITURE} and their doom.`
-  story.textContent = fantasyStory;
-  let stringFantasy = JSON.stringify(fantasyStory);
-  localStorage.setItem('renderedSciFiStory', stringFantasy);
+
+  `${parsedStory[1].word1} Dreams 
+      stuff of nightmares`
+  `The path was ${parsedStory[1].word2} but well marked. Streams of moonlight filtered through the leaves of the trees of the ${parsedStory[1].word1}, 
+  illuminating parts of the trail while others remained pitch black. A ${parsedStory[1].word3}'s hut was fabled to lie in this ${parsedStory[1].word1}, 
+  but ${parsedStory[1].word4} ${parsedStory[1].word5} at these superstitions. They had promised to ${parsedStory[1].word6} with ${parsedStory[1].word7} 
+  that night, but only in the middle of the ${parsedStory[1].word1}, at the stroke of midnight. As all the other girls in the village were 
+  ${parsedStory[1].word8}, ${parsedStory[1].word7} had readily agreed. As the midnight hour approached, the trail grew ${parsedStory[1].word9} and harder
+  to traverse. ${parsedStory[1].word10} lit her ${parsedStory[1].word11}. They continued onwards, with ${parsedStory[1].word7} ready at any moment, 
+  to claim the ${parsedStory[1].word12} ${parsedStory[1].word10} had promised. The night grew ${parsedStory[1].word13}, and the ${parsedStory[1].word1}
+  became ${parsedStory[1].word14} as they travelled the path they must. Eventually, the path opened up, and they found themselves in a 
+  ${parsedStory[1].word15}. A ${parsedStory[1].word16} in the middle of the ${parsedStory[1].word1}. The moon shone bright, and there was no mistaking 
+  the ${parsedStory[1].word16} directly in the middle of the ${parsedStory[1].word17}. “It’s the ${parsedStory[1].word3}’s house,” handsome 
+  ${parsedStory[1].word7} said as they examined the place. “We must flee, lest we meet our downfall here.”“But you wanted to ${parsedStory[1].word6} 
+  with me. Wouldn’t it be better on my ${parsedStory[1].word18}, in my house?” ${parsedStory[1].word7} replied. ${parsedStory[1].word10} 
+  turned and stared at ${parsedStory[1].word7}. As we all know, ${parsedStory[1].word19} can tell no lies, and in the bright moonlight falling within 
+  the ${parsedStory[1].word1}, ${parsedStory[1].word7} was no longer the most beautiful ${parsedStory[1].word20} in the village. It had transformed
+  from their dreams of youth and beauty into an old ${parsedStory[1].word3} with a long walkingstick, surrounded by strange ${parsedStory[1].word21}.
+  “Don’t you still want to ${parsedStory[1].word6} with me, ${parsedStory[1].word10}?” ${parsedStory[1].word7} cackled as it looked deep into their 
+  eyes. ${parsedStory[1].word10} ${parsedStory[1].word22} softly as ${parsedStory[1].word7} led the helpless fool to it's ${parsedStory[1].word16} 
+  and their doom.`
+
 }
 
 renderStory();
