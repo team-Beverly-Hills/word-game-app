@@ -27,15 +27,15 @@ function storyDiv(event){
   
   let story2content = document.createElement('p');
   story2content.textContent = parsedStory2;
-  story2.appendChild(story1content);
+  story2.appendChild(story2content);
   
   let story3content = document.createElement('p');
   story3content.textContent = parsedStory3;
-  story3.appendChild(story1content);
+  story3.appendChild(story3content);
   
   let story4content = document.createElement('p');
   story4content.textContent = parsedStory4;
-  story4.appendChild(story1content);
+  story4.appendChild(story4content);
 
 }
 
