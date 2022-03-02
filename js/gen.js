@@ -3,25 +3,26 @@
 // Dom Windows
 let userName = document.getElementById('userName');
 let storyForm = document.getElementById('storyGen');
-
-let scifidd = document.getElementById('ddScifi');
+let storyGenre = document.getElementById('storySelector');
 
 // localStorage Retrieval
 let savedUserName = localStorage.getItem('userName');
 let parsedName = JSON.parse(savedUserName);
+let savedStories = localStorage.getItem('storyWords');
+let parsedStories = JSON.parse(savedStories);
 
 // Functions;
-function renderUserName(){
+function renderUserName() {
   userName.textContent = `Welcome to the Site, ${parsedName}`;
 }
 
 /// GLOBAL Variable ///
 
 let stories = [];
+let currentGenre = '';
 
-/// OBJ Constructor ///
-// let scifiStory =
-function Story(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10, word11, word12, word13, word14, word15, word16, word17, word18, word19, word20, word21, word22){
+/// OBJ Constructors ///
+function Story(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10, word11, word12, word13, word14, word15, word16, word17, word18, word19, word20, word21, word22, storyType = '') {
   this.word1 = word1;
   this.word2 = word2;
   this.word3 = word3;
@@ -44,17 +45,55 @@ function Story(word1, word2, word3, word4, word5, word6, word7, word8, word9, wo
   this.word20 = word20;
   this.word21 = word21;
   this.word22 = word22;
+  this.storyType = storyType;
 
   stories.push(this);
 }
+if (savedStories) {
+  stories = parsedStories;
+}
 
-function handleSubmit(event){
+function MadLibsWords(madLib1, madLib2, madLib3, madLib4, madLib5, madLib6, madLib7, madLib8, madLib9, madLib10, madLib11, madLib12, madLib13, madLib14, madLib15, madLib16, madLib17, madLib18, madLib19, madLib20, madLib21, madLib22){
+  this.madLib1 = madLib1;
+  this.madLib2 = madLib2;
+  this.madLib3 = madLib3;
+  this.madLib4 = madLib4;
+  this.madLib5 = madLib5;
+  this.madLib6 = madLib6;
+  this.madLib7 = madLib7;
+  this.madLib8 = madLib8;
+  this.madLib9 = madLib9;
+  this.madLib10 = madLib10;
+  this.madLib11 = madLib11;
+  this.madLib12 = madLib12;
+  this.madLib13 = madLib13;
+  this.madLib14 = madLib14;
+  this.madLib15 = madLib15;
+  this.madLib16 = madLib16;
+  this.madLib17 = madLib17;
+  this.madLib18 = madLib18;
+  this.madLib19 = madLib19;
+  this.madLib20 = madLib20;
+  this.madLib21 = madLib21;
+  this.madLib22 = madLib22;
+}
+let sciFiWords = new MadLibsWords('Generic Place', 'Verb', 'Verb', 'Adjective', 'Thing', 'Adjective', 'Adverb', 'Person Noun(Plural)', 'Verb', 'Capitalized Place', 'Capitalized Place', 'Person Noun(Plural)', 'Adjective that ends in ing', 'Noun', 'Verb', 'Noun', 'Noun', 'Location in House', 'Part of the Body', 'Adjective', 'Food', 'Adjective');
+let fantasyWords = new MadLibsWords('', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
+let adventureWords = new MadLibsWords('', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
+let actionWords = new MadLibsWords('', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
+
+
+function madLibsLabelGen(){
+  
+}
+// Event Handlers
+function handleWordSubmit(event) {
   event.preventDefault();
   let word1 = event.target.word1.value;
   let word2 = event.target.word2.value;
   let word3 = event.target.word3.value;
   let word4 = event.target.word4.value;
-  let word5 =  event.target.word5.value;
+  let word5 = event.target.word5.value;
   let word6 = event.target.word6.value;
   let word7 = event.target.word7.value;
   let word8 = event.target.word8.value;
@@ -73,11 +112,31 @@ function handleSubmit(event){
   let word21 = event.target.word21.value;
   let word22 = event.target.word22.value;
 
-  new Story(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10, word11, word12, word13, word14, word15, word16, word17, word18, word19, word20, word21, word22);
-
+  if (currentGenre === 'Sci-Fi') {
+    stories[0] = new Story(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10, word11, word12, word13, word14, word15, word16, word17, word18, word19, word20, word21, word22, currentGenre);
+  } else if (currentGenre === 'Fantasy') {
+    stories[1] = new Story(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10, word11, word12, word13, word14, word15, word16, word17, word18, word19, word20, word21, word22, currentGenre);
+  } else if (currentGenre === 'Adventure') {
+    stories[2] = new Story(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10, word11, word12, word13, word14, word15, word16, word17, word18, word19, word20, word21, word22, currentGenre);
+  } else if (currentGenre === 'Action') {
+    stories[3] = new Story(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10, word11, word12, word13, word14, word15, word16, word17, word18, word19, word20, word21, word22, currentGenre);
+  } else {
+    alert('You Must Select a Genre');
+  }
+  stories.splice(4, 1);
   let localStories = JSON.stringify(stories);
   localStorage.setItem('storyWords', localStories);
   storyForm.reset();
 }
+function handleGenreSubmit(event) {
+  event.preventDefault();
+  currentGenre = event.target.genreSelector.value;
+  console.log(currentGenre);
+}
+
+// Function Calls
 renderUserName();
-storyForm.addEventListener('submit', handleSubmit);
+
+// Event Listeners
+storyGenre.addEventListener('submit', handleGenreSubmit);
+storyForm.addEventListener('submit', handleWordSubmit);
