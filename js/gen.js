@@ -75,9 +75,7 @@ function handleSubmit(event){
 
   let localStories = JSON.stringify(stories);
   localStorage.setItem('sci-fiStory', localStories);
-
-
-
+  storyForm.reset();
 }
 renderUserName();
 storyForm.addEventListener('submit', handleSubmit);
