@@ -42,14 +42,22 @@ header li {
   display: inline-block;
 }
 
+#newstoryBtn{
+
+  /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(138,43,226,1) 100%); */
+background-color: #00B2CA;
+border-radius: 10px;
+margin: 20px;
+}
+
 a{
   background: #F79256;
   /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(138,43,226,1) 100%); */
 border-radius: 10px;
 padding: .3em;
 padding-inline: 2em;
-
 }
+
 
 
 
@@ -106,30 +114,19 @@ main div{
   width: minmax(200px,max-content);
   height: minmax(200px,max-content);
   margin: 60px;
+  padding: 20px;
   background-color: #00B2CA;
 }
 
-main section{
-  position: relative;
-}
-main div#reset{
-  width: minmax(200px,max-content);
-  height: minmax(200px,max-content);
-  margin: 60px;
-  background-color: #00B2CA;
-  border: dashed orange;
-  padding: 20px;
-  text-align: center;
-}
 
 main div#reset p{
+  font-size: 30px;
   text-align: center;
 }
 
-
-main div p{
+/* main div p{
   text-align: left;
-}
+} */
 
 footer{
   width: 100%;
