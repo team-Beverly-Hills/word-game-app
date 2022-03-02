@@ -149,7 +149,7 @@ function madLibsLabelGen() {
     genre16.textContent = (`${fantasyWords.madLib16}`);
     genre17.textContent = (`${fantasyWords.madLib17}`);
     genre18.textContent = (`${fantasyWords.madLib18}`);
-    genre19.textContent = (`${fantasyWords.madLib119}`);
+    genre19.textContent = (`${fantasyWords.madLib19}`);
     genre20.textContent = (`${fantasyWords.madLib20}`);
     genre21.textContent = (`${fantasyWords.madLib21}`);
     genre22.textContent = (`${fantasyWords.madLib22}`);
@@ -172,7 +172,7 @@ function madLibsLabelGen() {
     genre16.textContent = (`${adventureWords.madLib16}`);
     genre17.textContent = (`${adventureWords.madLib17}`);
     genre18.textContent = (`${adventureWords.madLib18}`);
-    genre19.textContent = (`${adventureWords.madLib119}`);
+    genre19.textContent = (`${adventureWords.madLib19}`);
     genre20.textContent = (`${adventureWords.madLib20}`);
     genre21.textContent = (`${adventureWords.madLib21}`);
     genre22.textContent = (`${adventureWords.madLib22}`);
@@ -195,7 +195,7 @@ function madLibsLabelGen() {
     genre16.textContent = (`${actionWords.madLib16}`);
     genre17.textContent = (`${actionWords.madLib17}`);
     genre18.textContent = (`${actionWords.madLib18}`);
-    genre19.textContent = (`${actionWords.madLib119}`);
+    genre19.textContent = (`${actionWords.madLib19}`);
     genre20.textContent = (`${actionWords.madLib20}`);
     genre21.textContent = (`${actionWords.madLib21}`);
     genre22.textContent = (`${actionWords.madLib22}`);
