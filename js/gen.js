@@ -4,6 +4,8 @@
 let userName = document.getElementById('userName');
 let storyForm = document.getElementById('storyGen');
 
+let scifidd = document.getElementById('ddScifi');
+
 // localStorage Retrieval
 let savedUserName = localStorage.getItem('userName');
 let parsedName = JSON.parse(savedUserName);
