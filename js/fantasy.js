@@ -20,7 +20,7 @@ function renderUserName(){
 renderUserName();
 
 function renderStory() {
-  `The path was ${ADJECTIVE-ONE} but well marked. Streams of moonlight filtered through the leaves of the trees of
+  let fantasyStory = `The path was ${ADJECTIVE-ONE} but well marked. Streams of moonlight filtered through the leaves of the trees of
   the ${PLACE-ONE}, illuminating parts of the trail while others remained pitch black. A ${PERSON-THREE}'s hut was
   fabled to lie in this ${PLACE-ONE}, but ${NAME-ONE} ${VERB-ONE} at these superstitions. They had promised to
   ${VERB-TWO} with ${PERSON-TWO} that night, but only in the middle of the ${PLACE-ONE}, at the stroke of midnight.
@@ -42,7 +42,9 @@ function renderStory() {
   walkingstick, surrounded by strange ${NOUN-NINE}.
   “Don’t you still want to ${VERB-TWO} with me, ${PERSON-ONE}?” ${PERSON-TWO} cackled as she looked deep into their
   eyes. ${PERSON-ONE} ${VERB-FOUR} softly as ${PERSON-TWO} led the helpless fool to her ${FURNITURE} and their doom.`
-  
+  story.textContent = fantasyStory;
+  let stringFantasy = JSON.stringify(fantasyStory);
+  localStorage.setItem('renderedSciFiStory', stringFantasy);
 }
 
 renderStory();
