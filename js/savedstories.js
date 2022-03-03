@@ -23,19 +23,19 @@ function storyDiv(event){
   
   let story1content = document.createElement('p');
   story1content.textContent = parsedStory1;
-  story1.appendChild(story1content);
+  newstoryBtn1.appendChild(story1content);
   
   let story2content = document.createElement('p');
   story2content.textContent = parsedStory2;
-  story2.appendChild(story2content);
+  newstoryBtn2.appendChild(story2content);
   
   let story3content = document.createElement('p');
   story3content.textContent = parsedStory3;
-  story3.appendChild(story3content);
+  newstoryBtn3.appendChild(story3content);
   
   let story4content = document.createElement('p');
   story4content.textContent = parsedStory4;
-  story4.appendChild(story4content);
+  newstoryBtn4.appendChild(story4content);
 
 }
 
