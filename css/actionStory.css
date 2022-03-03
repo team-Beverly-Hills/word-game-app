@@ -28,6 +28,12 @@ header {
   letter-spacing: 1.5px;
 
 }
+header a{
+  border-radius: 10px;
+padding: .75em;
+padding-inline: 2em;
+font-size: 1.25vw;
+}
 header ul{
 
   justify-content: space-between;
@@ -49,12 +55,12 @@ header li {
   display: inline-block;
 }
 
-a{
+li{
   background: red;
   
   /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(138,43,226,1) 100%); */
 border-radius: 10px;
-padding: .3em;
+padding: .6em;
 padding-inline: 2em;
 color: white;
 
