@@ -100,9 +100,11 @@ header li:last-child:hover{
     transform: scale(1.5); 
 }
 body {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content:space-between;
+  align-items: center;
+
   background-image: url(https://static-cse.canva.com/blob/572626/1.magebyRodionKutsaevviaUnsplash.jpg)
 }
 
@@ -111,7 +113,7 @@ body {
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, #9C4BE7 100%);
   width: 70%;
-  height: 600px;
+  height: auto;
   text-align: center;
   margin: auto;
   display: flex;
@@ -138,6 +140,8 @@ main h1 form{
 main{
   display:flex;
   flex-direction: row;
+  margin: 0px 100px 100px 100px;
+
 }
 
 main div{
