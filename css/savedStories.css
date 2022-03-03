@@ -75,6 +75,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content:space-between;
+  background-image: url(https://static-cse.canva.com/blob/572626/1.magebyRodionKutsaevviaUnsplash.jpg)
 }
 
 #main-content {
@@ -108,9 +109,18 @@ main h1 form{
 
 main{
   display:flex;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQReDKUNzhvqwnpmJJBJpjuN0tGaQfxY2C2Xg&usqp=CAU);
 }
 
 main div{
+  width: minmax(200px,max-content);
+  height: minmax(200px,max-content);
+  margin: 60px;
+  padding: 20px;
+  background-color: #00B2CA;
+  
+}
+main div#reset{
   width: minmax(200px,max-content);
   height: minmax(200px,max-content);
   margin: 60px;
@@ -124,16 +134,24 @@ main div#reset p{
   text-align: center;
 }
 
-/* main div p{
-  text-align: left;
-} */
-
+.shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.shrink:hover, .shrink:focus, .shrink:active {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
 footer{
   width: 100%;
   height: 0;
   position: absolute;
   bottom: 0;
 }
-
-
-
