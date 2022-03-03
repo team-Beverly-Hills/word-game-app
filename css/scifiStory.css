@@ -1,0 +1,112 @@
+
+a:link { text-decoration: none; }
+a:visited {
+  text-decoration: none;
+}
+header {
+  background-color: #c79222;
+  /* grid-column: 1/-1; */
+  text-align: center;
+  /* justify-content: space-between; */
+  height: 10em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  
+}
+#title {
+  font-family: 'Indie Flower';
+  font-size: 40px;
+  letter-spacing: 1.5px;
+  padding: .75em;
+  border-radius: 5px;
+  background-color: #81A851;
+
+}
+header ul{
+
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+header nav{
+ 
+  width: 100%;
+  justify-content: space-between;
+}
+header li {
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+a{
+  background: #81A851;
+  /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(138,43,226,1) 100%); */
+border-radius: 10px;
+padding: .75em;
+padding-inline: 2em;
+font-size: 1.25vw;
+
+}
+
+
+
+header li:first-child:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+header li:last-child:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  background-image: url(../img/download.png);
+}
+
+main {
+  font-family: 'indie flower', cursive;
+  background: #c79222;
+  width: 70%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  border: solid 100px #7851A9;
+  /* border-bottom: solid 300px #7851A9; */
+  flex-direction: column;
+  padding: 20px;
+
+}
+main img {
+  width: 50px;
+  height: 50px;
+}
+main p {
+  text-align: center;
+  line-height: 2em;
+  padding-inline: 40px;
+
+ 
+}
+
+#userProfile {
+  display: inline-flex;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+

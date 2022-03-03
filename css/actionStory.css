@@ -1,0 +1,123 @@
+
+a:link { text-decoration: none; }
+a:visited {
+  text-decoration: none;
+}
+body{
+  background-image: url('../img/actionbg.jpg');
+  background-image: url('../img/actionbg.jpg');
+  background-size: cover;
+
+}
+header {
+  background-color: yellow;
+  /* grid-column: 1/-1; */
+  text-align: center;
+  /* justify-content: space-between; */
+  height: 10em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  
+}
+#title {
+  font-family: 'Indie Flower';
+  font-size: 40px;
+  letter-spacing: 1.5px;
+
+}
+header a{
+  border-radius: 10px;
+padding: .75em;
+padding-inline: 2em;
+font-size: 1.25vw;
+}
+header ul{
+
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+header nav{
+ 
+  width: 100%;
+  justify-content: space-between;
+}
+header li {
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+li{
+  background: red;
+  
+  /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(138,43,226,1) 100%); */
+border-radius: 10px;
+padding: .6em;
+padding-inline: 2em;
+color: white;
+
+}
+
+
+
+header li:first-child:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+header li:last-child:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+main {
+  font-family: 'indie flower', cursive;
+  background: yellow;
+  /* width: 70%; */
+  width:  minmax(400px, 400px);
+  height:  auto;
+  display: flex;
+  border: solid 100px red;
+  margin: 80px;
+  flex-direction: column;
+  padding: 20px;
+
+}
+
+main img {
+  width: 40px;
+  height: auto;
+}
+main p {
+  font-size: 19px;
+  text-align: center;
+  line-height: 1.8em;
+  padding-inline: 40px;
+
+ 
+}
+
+#userProfile {
+  display: inline-flex;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+
