@@ -77,7 +77,7 @@ main {
   height: auto;
   margin: auto;
   display: flex;
-  border: solid 100px orange;
+  border: solid 100px rgb(160, 19, 153);
   border-bottom: solid 300px orange;
   flex-direction: column;
   padding: 20px;
