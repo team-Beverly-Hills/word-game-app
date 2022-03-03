@@ -68,6 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content:space-between;
+  background-image: url(https://images.unsplash.com/photo-1512036666432-2181c1f26420?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YWR2ZW50dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
 }
 
 main {
@@ -78,7 +79,7 @@ main {
   margin: auto;
   display: flex;
   border: solid 100px orange;
-  border-bottom: solid 300px orange;
+  /* border-bottom: solid 300px orange; */
   flex-direction: column;
   padding: 20px;
   
@@ -92,7 +93,6 @@ main p {
   line-height: 2em;
   padding-inline: 40px;
 
- 
 }
 
 #userProfile {
