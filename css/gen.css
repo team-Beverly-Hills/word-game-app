@@ -1,17 +1,115 @@
-body {
-  background-color: cornsilk;
-}
 
 #userProfile {
-  border: solid gray;
-  position: ;
+  display: inline-flex;
+  position: relative;
+  top: 40px;
+  right: 150px;
 }
 
-select {
-  border: green solid;
+#userProfile img{
+  width: 20px;
+  height: auto;
+  padding-right: 5px;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: #ddd;
+}
+
+#storySelector{
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly; 
+  position: relative;
+  top: 75px;
+
+}
+
+#storySelector label{
+  text-align: center;
+}
+
+option{
   background-color: hotpink;
 }
 
-#storyGen div {
-  border: dashed blue;
+select {
+  width: 13em;
+  height:4em;
+  border: green solid;
+}
+
+
+ #formstyle { 
+  background-color: yellow;
+  margin-inline: 100px;
+  border: solid blueviolet 100px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-inline: 50px;
+  padding-block: 10px;
+} 
+#storyGen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#storyGen label{
+  text-align: right;
+  margin-right: 10px;
+
+  margin-top: 15px;
+}
+input{
+  margin-top: 5px;
+  width: 50%;
+  border-radius: 6px;
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ddd;
+}
+
+
+form button{
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  border-radius: 5px;
+}
+form button:hover {
+  background-color: royalblue;
+  zoom: 1.1;
+}
+
+#storyGen button{
+  position: relative;
+  bottom: 70px;
+  width: 400px;
+
+}
+
+#linkcontainer{
+  display: flex;
+  width: 70%;
+  height: auto;
+  justify-content: space-evenly;
+}
+
+#linkcontainer a{
+  background-color: blue;
+  padding: 1em;
+  border-radius: 5px;
+}
+#linkcontainer a:hover{
+  zoom: 1.1;
 }
