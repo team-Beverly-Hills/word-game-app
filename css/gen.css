@@ -23,7 +23,7 @@ a{
 
 #storySelector{
   display: flex;
-  width: 70%;
+  width: 40%;
   justify-content: space-evenly; 
   position: relative;
   top: 75px;
