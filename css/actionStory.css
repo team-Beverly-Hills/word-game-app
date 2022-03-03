@@ -3,8 +3,14 @@ a:link { text-decoration: none; }
 a:visited {
   text-decoration: none;
 }
+body{
+  background-image: url('../img/actionbg.jpg');
+  background-image: url('../img/actionbg.jpg');
+  background-size: cover;
+
+}
 header {
-  background-color: #00B2CA;
+  background-color: yellow;
   /* grid-column: 1/-1; */
   text-align: center;
   /* justify-content: space-between; */
@@ -13,7 +19,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 80px;
+
   
 }
 #title {
@@ -44,11 +50,13 @@ header li {
 }
 
 a{
-  background: #F79256;
+  background: red;
+  
   /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(138,43,226,1) 100%); */
 border-radius: 10px;
 padding: .3em;
 padding-inline: 2em;
+color: white;
 
 }
 
@@ -72,24 +80,26 @@ body {
 
 main {
   font-family: 'indie flower', cursive;
-  background: rgb(34,193,195);
-  width: 70%;
-  height: auto;
-  margin: auto;
+  background: yellow;
+  /* width: 70%; */
+  width:  minmax(400px, 400px);
+  height:  auto;
   display: flex;
-  border: solid 100px orange;
-  border-bottom: solid 300px orange;
+  border: solid 100px red;
+  margin: 80px;
   flex-direction: column;
   padding: 20px;
 
 }
+
 main img {
-  width: 20px;
+  width: 40px;
   height: auto;
 }
 main p {
+  font-size: 19px;
   text-align: center;
-  line-height: 2em;
+  line-height: 1.8em;
   padding-inline: 40px;
 
  
