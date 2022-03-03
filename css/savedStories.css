@@ -134,7 +134,7 @@ main div#reset p{
   text-align: center;
 }
 
-.shrink-on-hover {
+.shrink {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -145,7 +145,7 @@ main div#reset p{
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.shrink-on-hover:hover, .shrink-on-hover:focus, .shrink-on-hover:active {
+.shrink:hover, .shrink:focus, .shrink:active {
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
 }
